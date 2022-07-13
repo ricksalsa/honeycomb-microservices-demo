@@ -1,5 +1,6 @@
 # https://mcr.microsoft.com/v2/dotnet/sdk/tags/list
 FROM mcr.microsoft.com/dotnet/sdk:5.0.103 as builder
+LABEL org.opencontainers.image.source https://github.com/ricksalsa/honeycomb-microservices-demo
 WORKDIR /app
 COPY cartservice.csproj .
 RUN dotnet restore cartservice.csproj -r linux-musl-x64

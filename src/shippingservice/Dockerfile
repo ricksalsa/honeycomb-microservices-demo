@@ -1,4 +1,5 @@
 FROM golang:1.17-alpine as builder
+LABEL org.opencontainers.image.source https://github.com/ricksalsa/honeycomb-microservices-demo
 RUN apk add --no-cache ca-certificates git
 WORKDIR /src
 

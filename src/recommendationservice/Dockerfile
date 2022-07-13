@@ -1,4 +1,5 @@
 FROM python:3.7-slim
+LABEL org.opencontainers.image.source https://github.com/ricksalsa/honeycomb-microservices-demo
 RUN apt-get update -qqy && \
 	apt-get -qqy install wget g++ && \
 	rm -rf /var/lib/apt/lists/*

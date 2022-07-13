@@ -1,4 +1,5 @@
 FROM node:12-alpine as base
+LABEL org.opencontainers.image.source https://github.com/ricksalsa/honeycomb-microservices-demo
 
 FROM base as builder
 

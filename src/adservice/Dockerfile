@@ -1,4 +1,5 @@
 FROM openjdk:11-slim as builder
+LABEL org.opencontainers.image.source https://github.com/ricksalsa/honeycomb-microservices-demo
 
 WORKDIR /app
 
