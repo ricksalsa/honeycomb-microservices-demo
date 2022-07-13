@@ -1,4 +1,4 @@
-apiVersion: skaffold/v1beta2
+apiVersion: skaffold/v2beta29
 kind: Config
 build:
   artifacts:
@@ -31,7 +31,10 @@ build:
   tagPolicy:
     gitCommit: {}
   local:
-    useBuildkit: false
+    push: true
+    tryImportMissing: true
+    useBuildkit: true
+    concurrency: 0
 deploy:
   kubectl:
     manifests:
