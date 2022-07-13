@@ -1,4 +1,4 @@
-FROM python:3.7-slim as base
+FROM --platform=linux/amd64 python:3.7-slim as base
 LABEL org.opencontainers.image.source https://github.com/ricksalsa/honeycomb-microservices-demo
 
 FROM base as builder
